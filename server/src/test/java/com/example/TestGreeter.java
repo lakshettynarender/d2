@@ -30,4 +30,9 @@ public class TestGreeter {
 
     assertThat(greeter.greet(someone).length(), is(greaterThan(someone.length())));
   }
+
+  @Test
+  public void addShouldReturnSumOfTwoNumbers() {
+    assertThat(greeter.add(2, 5), is(7));
+  }
 }
